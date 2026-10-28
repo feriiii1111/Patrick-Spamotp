@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PatrickStar Spam OTP</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <button class="menu-btn" id="menuBtn" title="Menu">
+      <svg viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+    </button>
+    <div class="logo">Patrick<span>Star</span> OTP</div>
+  </div>
+</div>
+
+<!-- DROPDOWN -->
+<div class="dropdown" id="dropdown">
+  <a class="dropdown-item" href="docs.html">
+    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+    REST API Docs
+  </a>
+  <div class="dropdown-item" id="docsBtn">
+    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+    Endpoint List
+  </div>
+  <div class="dropdown-item" id="apikeyBtn">
+    <svg viewBox="0 0 24 24"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+    API Key: Patrick
+  </div>
+</div>
+
+<div class="container">
+  <div class="title-block">
+    <h1>
+      <span class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+        Spam OTP
+      </span>
+    </h1>
+    <p>Masukkan nomor target (Maks 5)</p>
+  </div>
+
+  <div class="input-grid">
+    <input class="phone-input" type="tel" placeholder="08xxxxxxxxxx" id="phone1" maxlength="15">
+    <input class="phone-input" type="tel" placeholder="08xxxxxxxxxx" id="phone2" maxlength="15">
+    <input class="phone-input" type="tel" placeholder="08xxxxxxxxxx" id="phone3" maxlength="15">
+    <input class="phone-input" type="tel" placeholder="08xxxxxxxxxx" id="phone4" maxlength="15">
+    <input class="phone-input" type="tel" placeholder="08xxxxxxxxxx" id="phone5" maxlength="15">
+  </div>
+
+  <select class="target-select" id="targetSelect">
+    <option value="all">Semua Target (64 Endpoint)</option>
+    <option value="1">Tokopedia</option>
+    <option value="2">Matahari</option>
+    <option value="3">BRI</option>
+    <option value="4">Blibli/Tiket</option>
+    <option value="5">Tiket.com</option>
+    <option value="6">Traveloka</option>
+    <option value="7">Kredivo</option>
+    <option value="8">Akulaku</option>
+    <option value="9">Kredit Pintar</option>
+    <option value="10">Bank Neo</option>
+    <option value="11">Adakami</option>
+    <option value="12">Home Credit</option>
+    <option value="13">SPindo</option>
+    <option value="14">Julo</option>
+    <option value="15">FinAccel</option>
+    <option value="16">Greensm</option>
+    <option value="17">UangMe</option>
+    <option value="18">PinjamDuit</option>
+    <option value="19">Akseleran</option>
+    <option value="20">Maxim</option>
+    <option value="21">Auto2000</option>
+    <option value="22">Toyota Astra</option>
+    <option value="23">Astra Daihatsu</option>
+    <option value="24">Moladin</option>
+    <option value="25">Carro</option>
+    <option value="26">Duniagames</option>
+    <option value="27">VC Gamers</option>
+    <option value="28">Stockbit</option>
+    <option value="29">Vidio</option>
+    <option value="30">Tri (3)</option>
+    <option value="31">Alodokter</option>
+    <option value="32">Halodoc</option>
+    <option value="33">Siloam</option>
+    <option value="34">Sofia (BM Secure)</option>
+    <option value="35">Beautyhaul</option>
+    <option value="36">Bonus Belanja</option>
+    <option value="37">Pizza Hut</option>
+    <option value="38">Eraspace</option>
+    <option value="39">Alfagift</option>
+    <option value="40">Ruparupa</option>
+    <option value="41">Pegipegi</option>
+    <option value="42">Rumah123</option>
+    <option value="43">Pinhome</option>
+    <option value="44">Internet Rakyat</option>
+    <option value="45">PlanetBan</option>
+    <option value="46">Paper.id</option>
+    <option value="47">Royal Canin Club</option>
+    <option value="48">Eiger Adventure</option>
+    <option value="49">Generasi Maju</option>
+    <option value="50">Buccheri</option>
+    <option value="51">Gabino</option>
+    <option value="52">Mister Aladin</option>
+    <option value="53">Garasi.id</option>
+    <option value="54">Skul.id</option>
+    <option value="55">Yoodo (MY)</option>
+    <option value="56">Fastwork</option>
+    <option value="57">BisaTopup</option>
+    <option value="58">Tokoplas</option>
+    <option value="59">Maulagi.id</option>
+    <option value="60">Minumyuk Kaka</option>
+    <option value="61">Jembatani</option>
+    <option value="62">Sidemang Palembang</option>
+    <option value="63">BYU</option>
+    <option value="64">HRS-BRE</option>
+  </select>
+
+  <button class="btn-spam" id="spamBtn">
+    <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+    Request OTP
+  </button>
+
+  <div class="batch-status" id="batchStatus">
+    <span id="batchPhone">—</span>
+    <span class="ok" id="batchText">
+      <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      Ready
+    </span>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card stat-success">
+      <div class="label">SUCCESS</div>
+      <div class="value" id="statSuccess">0</div>
+    </div>
+    <div class="stat-card stat-rate">
+      <div class="label">RATE LIMIT</div>
+      <div class="value" id="statRate">0</div>
+    </div>
+    <div class="stat-card stat-bad">
+      <div class="label">BAD REQUEST</div>
+      <div class="value" id="statBad">0</div>
+    </div>
+    <div class="stat-card stat-error">
+      <div class="label">ERROR</div>
+      <div class="value" id="statError">0</div>
+    </div>
+  </div>
+
+  <!-- CONSOLE LOG -->
+  <div class="console-wrap">
+    <div class="console-header">
+      <span>Console Log</span>
+      <button class="console-clear" id="clearConsole">Clear</button>
+    </div>
+    <div class="console" id="console"></div>
+  </div>
+</div>
+
+<div class="footer">PatrickStar Spam OTP &middot; API Key: Patrick</div>
+
+<!-- ENDPOINT LIST MODAL -->
+<div class="modal-overlay" id="docsModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Endpoint List</h2>
+      <button class="modal-close" id="closeDocs">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="doc-section">
+        <h3>API Key</h3>
+        <p>Gunakan header: <code>X-API-Key: Patrick</code></p>
+        <p>Semua request harus menyertakan API key ini.</p>
+      </div>
+      <div class="doc-section">
+        <h3>Cara Pakai</h3>
+        <ul>
+          <li>Masukkan 1–5 nomor HP (format 08xxxxxxxxxx)</li>
+          <li>Pilih target atau "Semua Target"</li>
+          <li>Tekan <strong>Request OTP</strong></li>
+          <li>Lihat hasil di Console Log &amp; Stats</li>
+        </ul>
+      </div>
+      <div class="doc-section">
+        <h3>64 Endpoint List</h3>
+        <div class="endpoint-list" id="endpointList"></div>
+      </div>
+      <div class="doc-section">
+        <h3>Response Codes</h3>
+        <ul>
+          <li><code>200 / 201</code> — Success</li>
+          <li><code>429</code> — Rate Limit</li>
+          <li><code>400 / 422</code> — Bad Request</li>
+          <li><code>4xx / 5xx / network</code> — Error</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/endpoints.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
