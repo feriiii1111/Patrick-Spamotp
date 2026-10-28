@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/docs", "destination": "/docs.html" }
+  ],
+  "functions": {
+    "api/spam.js": {
+      "maxDuration": 60
+    }
+  }
+}
